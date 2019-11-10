@@ -23,7 +23,7 @@ development of Product Features for a specific User Story.
 * **Integration testing**: Process to test if associated modules continue
 to work as expected, when integrated together.
 
-* I**terative Development, Testing, and Documentation (IDTD):** The
+* **Iterative Development, Testing, and Documentation (IDTD):** The
 iterative process of developing code, testing requirements, and
 documenting specifications and results. Iterations are typically
 executed incrementally at the level of the User Story.
@@ -44,23 +44,23 @@ Release.
 specific Milestone set of User Stories.
 
 * **RACI:** A defining set of responsibilities for team
-members.
+members (Responsible, Accountable, Consulted, Informed).
 
-* **Responsible:** People or stakeholders who do the work. They must
+    * **Responsible:** People or stakeholders who do the work. They must
 complete the task or objective or make the decision. Several people
 can be jointly Responsible.
 
-* **Accountable:** Person or stakeholder who is the \"owner\" of the
+    * **Accountable:** Person or stakeholder who is the \"owner\" of the
 work. He or she must sign off or approve when the task, objective or
 decision is complete. This person must make sure that responsibilities
 are assigned in the matrix for all related activities. Success
 requires that there is only one person Accountable.
 
-* **Consulted:** People or stakeholders who need to give input before
+    * **Consulted:** People or stakeholders who need to give input before
 the work can be done and signed-off on. These people are active
 participants.
 
-* **Informed:** People or stakeholders who need updates on progress or
+    * **Informed:** People or stakeholders who need updates on progress or
 decisions, but they do not need to be formally consulted, nor do they
 contribute directly to the task or decision.
 
@@ -76,6 +76,9 @@ specific Product Release.
 * **Roadmap** A project management organizational
 instrument utilized to track all User Stories describing potential
 Product Features for future Product Release.
+
+* **SOP:** A Standard Operating Procedure defining procedures that must be
+followed.
 
 * **Traceability Matrix:** A table which links corresponding
 requirements, tests, and test results for each User Story for a specific
@@ -105,7 +108,7 @@ Software development activities at MetrumRG are characterized
 by:
 
 * a focus on the actions that will deliver the most value to the
-     customer or end*user
+     customer or end-user
 
 * a growth mindset, acknowledging that the best answer may not be
      immediately evident and that failure is part of
@@ -142,7 +145,7 @@ requirements, team design, and overall project complexity.
 
 ## Roles & Responsibilities
 
-* A key component of project management is assignment of specific roles
+A key component of project management is assignment of specific roles
 and responsibilities to project team members. The roles and
 responsibilities are adjusted given the project size and scope and, in
 some cases, multiple roles may be served by the same individual. Roles
@@ -153,13 +156,19 @@ Informed) matrix for each User Story (see Development section). A
 non-exhaustive list of roles and responsibilities is shown
 below:
 
-* **PL:** Project Lead: Status and communication of project activities, deliverables, and timelines within the team and to external stakeholders.
-* **TL:** Tech Lead: Overall technical and design implementation choices and execution. Scoping of implementation timelines.
-* **D:** Developer: Implementation of functionality, testing, documentation, and other relevant developer activities.
-* **DO:** Devops (optional): Operational activities such as continuous integration/development, building and publishing releases.
+* **PL:** Project Lead: Status and communication of project activities,
+    deliverables, and timelines within the team and to external stakeholders.
+* **TL:** Tech Lead: Overall technical and design implementation choices and
+    execution. Scoping of implementation timelines.
+* **D:** Developer: Implementation of functionality, testing, documentation, and
+    other relevant developer activities.
+* **DO:** Devops (optional): Operational activities such as continuous
+    integration/development, building and publishing releases.
 * **SA:** System Architect (optional): System design strategy.
-* **SME:** Subject Matter Expert (optional): Subject matter specific feedback and guidance.
-* **QA:** Quality Assurance: Development activities proceed via the defined SOP relevant to the project.
+* **SME:** Subject Matter Expert (optional): Subject matter specific feedback
+    and guidance.
+* **QA:** Quality Assurance: Development activities proceed via the defined SOP
+    relevant to the project.
 
 # Project Lifecycle
 
@@ -173,7 +182,7 @@ The project kickoff is a unique extension to the planning phase that
 happens at the beginning of a given project. The focus of this phase is
 to set the project scope and default expectations around development
 activities, roles and responsibilities, work instructions, and various
-other procedural elements of the project lifecycle. 
+other procedural elements of the project lifecycle.
 
 During all subsequent planning sessions, these choices are assessed for
 whether they still hold true. If so, the project proceeds as outlined in the
@@ -229,15 +238,14 @@ make-up.
 
 ### Development
 
-Development proceeds as an iterative process of developing code,
-testing requirements, and documenting specifications and results (IDTD).
-Iterations are typically executed incrementally at the level of the User
-Stories for a specific Milestone. Milestone project progress and current
-status of User Stories for a specific Milestone should progress through the the following stages: Backlog,
-Scope, Scope-Complete, Implement, Implement-Complete, Accept,
-Accept-Complete, and Done. The entire process, including approval of
-stage transitions, is tracked and documented using a version-control
-system.
+Development proceeds as an iterative process of developing code, testing
+requirements, and documenting specifications and results (IDTD). Iterations are
+typically executed incrementally at the level of the User Stories for a specific
+Milestone. Milestone project progress and current status of User Stories for a
+specific Milestone should progress through the the following stages: Backlog,
+Scope, Scope-Complete, Implement, Implement-Complete, Accept, Accept-Complete,
+and Done. The entire process, including approval of stage transitions, is
+tracked and documented using a version-control system.
 
 1. **Backlog**: The backlog is defined by the complete set of User
 Stories defined in the planning phase in priority order.
@@ -286,7 +294,7 @@ executed.
 
 Tests should be used judiciously, and strive to represent the
 real-world usage scenarios outlined in the user stories. Tests
-should be automated when possible but some manual testing may
+should be automated when possible, but some manual testing may
 be required. Unit tests provide a foundation of testing and
 capture expected outputs. Prior to release, additional
 integration tests can capture the expected behavior across
@@ -383,18 +391,16 @@ pending the potential resolution of remaining product defects. In some
 circumstances, release may proceed with known defects given an otherwise
 favorable assessment of the value of the product.
 
-1. Defect Management: Defects remaining in the code base for a
-particular release are identified in release notes and
-subsequently tracked as User Stories in the Product Roadmap. Defect-related User Stories are considered for
-inclusion in subsequent product releases in the planning phase of
-the SDLC.
+1. Defect Management: Defects remaining in the code base for a particular
+release are identified in release notes and subsequently tracked as User Stories
+in the Product Roadmap. Defect-related User Stories are considered for inclusion
+in subsequent product releases in the planning phase of the SDLC.
 
 2. Versioning: Product Releases should adhere to the closest feasible
-implementation possible of semantic versioning
-(https://semver.org/) allowable by the language. If deviations are
-made, they should adhere to the best-practices established by the
-language. Version constraints (generally) do not influence
-development processes, rather, they serve to quickly communicate
+implementation possible of semantic versioning (https://semver.org/) allowable
+by the language. If deviations are made, they should adhere to the
+best-practices established by the language. Version constraints (generally) do
+not influence development processes, rather, they serve to quickly communicate
 the state of changes in a project.
 
 ### Maintenance
@@ -412,18 +418,15 @@ described as new User Stories. The system impact of the bug will
 be assessed and appropriately prioritized in the product Roadmap
 for incorporation into a new release.
 
-2. Query/Clarification: This is simply responding to query posed by
-the user, which is a result of lack of familiarity or
-understanding of the product. No bug or defect is identified. The
-maintenance team member would understand the query and provide a
-corresponding solution (explanation, guidance, etc.) to the
-user.
+2. Query/Clarification: This is simply responding to query posed by the user,
+which is a result of lack of familiarity or understanding of the product. No bug
+or defect is identified. The maintenance team member would understand the query
+and provide a corresponding solution (explanation, guidance, etc.) to the user.
 
-3. Enhancements/Feature Requests: User-generated product enhancements
-or feature requests are acknowledged as such and new User Stories
-are created for each feature request. These User Stories are
-tracked in the product Roadmap and development proceeds as
-described in the Planning phase of the SDLC.
+3. Enhancements/Feature Requests: User-generated product enhancements or feature
+requests are acknowledged as such and new User Stories are created for each
+feature request. These User Stories are tracked in the product Roadmap and
+development proceeds as described in the Planning phase of the SDLC.
 
 References
 =======================
@@ -447,9 +450,8 @@ GxP Environment; 2007*
 
 * ICH Q9; *Quality RIsk Management; Version 4; Nov.2027*
 
-* B.Meyer, Agile!, DOI 10.1007/978 - 319 - 05155-0\_5, Springer
+* B.Meyer, Agile!, DOI 10.1007/978-3-319-05155-0, Springer
 International Publishing Switzerland 2014
 
-* General Principles of Software Validation, Guidance for Industry and
-FDA Staff
-  * https://www.fda.gov/regulatory-information/search-fda-guidance-documents/general-principles-software-validation]{.underline}](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/general-principles-software-validation)
+* General Principles of Software Validation, Guidance for Industry and FDA Staff
+(https://www.fda.gov/regulatory-information/search-fda-guidance-documents/general-principles-software-validation)
